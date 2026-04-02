@@ -1,0 +1,44 @@
+What Linux is?
+OS(Opearting System):Just like windows or macos linux manages hardware & software resources on a computer.
+Kernel-Based:The linux part specifically referd to the kernal,the core of the OS,but most people say "Linux" to mean the whole os built around it.
+Open-source: Anyone can view, modify & distribute the source code.
+
+what IT's used for?
+--> Server(web servers, Database servers,....)
+--> Desktops &Laptop (via distributions like Ubuntu,Fedora,Linux mint)
+--> Android (Android is based on the linux kernel)
+--> Embedded Systems (Routers, smart TV's..)
+--> Supercomputers( most run linux)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Open-source s/w:- Computer s/w that makes it source code publicy avaliable, allowing anyone to view,modify distribute &use it freely under
+                  a specific open-source license.
+Embedded System:- A specialized computer with a dedicated function,intergrated into a large mechanical or electronic device.
+Kernel:-- It is the core or the heart of the opearating system. It's the centeral part that manages & facilitates communication b/w the computers H/w & S/w.
+Shell:-- A shellnthat allows users to interact with the operating system. There are two types of shell.
+1.Command Line Interface(CLI):Executes the command provided by user given in the from command & display the output in terminal.
+2.Executes the process provided by user in graphical way & output is displayed in the graphical window.
+Command:-- It is an instruction/request given to the operating system by a user.
+Terminal:-- It is a text-based interface that allows you to interact with the opearting system by typing commands.It's a way for you to coomunicate with the  linux machines.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Key features of linux:--
+--> Linux follows the open-source model.
+--> Linux has muiltiuser & multitasking capabilities.
+--> Security features.
+                                                                                                           
+Linux OS distributions:--
+Many of the user taken the linux os & modified according to their requirements & released into the market with different names called linux distributions.
+Redhat, ubuntu,Debain,Centos,Fedora,Opensuse,Kali linux,Amazon Linux,Rocky Linux.
+
+In Linux we have different types of commands
+1.System commands
+2.Hardware commands
+3.File commands
+4.Permission Commands
+5.User commands
+6.Search commands
+7. Networking Commands
+Note:By default we are in EC2-user, But if we want to perform any action we should be in root user because,root is the ultimate king of linux, root has
+  fully permissions, so that we can run any command anywhere.
+
+
