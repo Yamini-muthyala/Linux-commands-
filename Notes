@@ -19,7 +19,7 @@ Shell:-- A shellnthat allows users to interact with the operating system. There 
 2.Executes the process provided by user in graphical way & output is displayed in the graphical window.
 Command:-- It is an instruction/request given to the operating system by a user.
 Terminal:-- It is a text-based interface that allows you to interact with the opearting system by typing commands.It's a way for you to coomunicate with the  linux machines.
-
+Daemons:-- Manages are background services(sshd,https,systemd) that either start up during boot or after you log into the desktop.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Key features of linux:--
 --> Linux follows the open-source model.
