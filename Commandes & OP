@@ -7,4 +7,4 @@ uname -r : Used to get kernal version of our OS
 uname -a: used to get full info BOUT os(A-ALL)
 uptime : used to get since how long our system is running state. ex: time up munities, 2 users, load average:0:00,0.00,0.00
 who : who are using ex:username date time IP address
-N 
+
