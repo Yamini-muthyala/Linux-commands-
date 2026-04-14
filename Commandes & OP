@@ -1,5 +1,7 @@
 Sudo-> Super user do/ switch user do
 
+****SYSTEM COMMANDS****
+
 Sudo -i  or sudo su -   :To login as root user
 Exit  : To exit the root user
 uname : Used to get type of OS
@@ -7,4 +9,36 @@ uname -r : Used to get kernal version of our OS
 uname -a: used to get full info BOUT os(A-ALL)
 uptime : used to get since how long our system is running state. ex: time up munities, 2 users, load average:0:00,0.00,0.00
 who : who are using ex:username date time IP address
+whoami : used to see the current user 
+uptime : used to get sice how long our system is running state. 
+uptime -p : This will give only time
+date : to get todays date ex: sat Aug 30 14:36:50 UTC 2025
+timedatectl : used to get timezone 
+hostname : Used to get private dns name ofour system ex:ip-172-31-24-62.eu-north-1.computer.in
+hostname -i : used to get private ip of our system ex: 176.31.24.62
+hostnamectl set-hostname "hacchi" :used to change host name 
+Ctrl+D : exit
+ip addr :used to get private IP
+ip route : used to get private IP
+ifconfig : used to get private IP
+
+****HARDWARE COMMAND****               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
