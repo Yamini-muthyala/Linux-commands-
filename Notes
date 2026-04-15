@@ -48,5 +48,6 @@ Note:By default we are in EC2-user, But if we want to perform any action we shou
 3.save& quit mode
 To open any file in vim editor : vim filename or vi filename
 
-command mode:-- Tghis is the default mode in vim editor,It is used to perform some actions like used ro copy the data,delete the data and we can make undo,redo the changes as well.
-
+command mode:-- This is the default mode in vim editor,It is used to perform some actions like used ro copy the data,delete the data and we can make undo,redo the changes as well.
+Insert mode : This is used to insert the data or make any modifications in a file
+Difference b/w command mode & Insert mode :  If we perform command mode keys we will be in command mode only,  If we perform Insert mode keys we will be in command mode only
