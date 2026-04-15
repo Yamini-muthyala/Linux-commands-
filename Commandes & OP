@@ -10,14 +10,13 @@ mkdir= making directory
 -t   = Time
 -a   = any file(hidden file)
 Ctrl+D = save
-ctrl+c = copy
+mouse right click + hit the copy = copy
 Ctrl+shift+v = paste(window)
-
 
 
 ****SYSTEM COMMANDS****
 
-Sudo -i  or sudo su -   :To login as root user
+Sudo -i  or sudo su - :To login as root user
 Exit  : To exit the root user
 uname : Used to get type of OS
 uname -r : Used to get kernal version of our OS
@@ -135,6 +134,60 @@ wq : to save & quit at a time
 wq! : to save & quitforcefully at a time
 
 ****COPY COMMAND****
+
+cp file1 file2 : the  data fromfile 1 copies into file2 ,but the problem is it willoverwrite the data which are present in file2
+                 to overcome this issue we will use 'cat' command
+cat file1 >> file2 : cat source >> destination
+
+****MOVE COMMAND****
+
+mv file1 file2 : This is also called renaming a file (mv source destination)
+
+****PERMISSION****
+
+chmod 751 folder (only folder) ex: op/rwxr-x--x
+chmod 777 file1 file2 (multiple)
+chmod 644 * (all files)
+chmod 555 folder1 -r (it will chanage both folder & files)
+chmod 777 folder/* (It will only apply the insider folder data not applicable the folder)
+
+r = read = 4
+w = write = 2
+x = executive = 1
+- = nothing =0
+
+ex: rw-r--r-- = 4+2+0 ; 4+0+0 ; 4+0+0  = 644
+    rwxr-x--x = 4+2+1 ; 4+0+1 ; 0+0+1  = 751
+
+****USER COMMANDS****
+
+cat /ect/passwd (or) getent passwd : To see all user
+useradd username (or) adduser username :To create user
+id username : To check a specific user
+cat /ect/group (or)getent group :
+cd /home/username : To create a user path
+userdel -r username : To delete the user
+su - username : to switch to user
+passwd username : to set a password to user
+
+ ex: shiva:x:1001:1001""/home/shiva/bin/bash
+  shiva = username ; x = It store the user passward ; 1001 = user id(UID) ; 1001 = group id(GID) ; /home/shiva = this is userpath ; /bin/bash = this users shell path
+
+Note:
+---->whenever we create a user, then automatically group will be create
+---->whenever we create a user, than automatically path will be create
+---->We xan't delete the groups directly which are created by the users, If we delete uer then automatically group will be delete.
+
+****GROUP COMMANDS****
+
+groupadd groupname : To create a group
+usermod-aG groupname username :To add a user to a group
+id username : check how many group that user is there
+groupdel groupname : to delete a group 
+getent group (or) cat/etc/group : to see the list of group
+
+
+
 
 
 
