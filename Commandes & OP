@@ -10,6 +10,10 @@ mkdir= making directory
 -t   = Time
 -a   = any file(hidden file)
 Ctrl+D = save
+ctrl+c = copy
+Ctrl+shift+v = paste(window)
+
+
 
 ****SYSTEM COMMANDS****
 
@@ -113,8 +117,22 @@ ctrl+r : used to redo the chnages
 / or ? (word) : used to search for a word in a file ex: /mongodbs or ?mongodbs
 %s/old/new/g : used to replace (s-string ; old-existing word ; new- replace word ; g- global) ex:%s/mongobds/linux/g
 
+Inser mode:------
 
+i : to go insert mode
+esc : to go back to command mode
+A : to go o the Ending
+I : to go to starting of the line
+O : To create a new line above the cursor
+o : to create a new line below the cursor
 
+Save & Quit mode:------
+
+w : to save the data
+q : to quit from vim editor
+q! : to quit forcefully
+wq : to save & quit at a time
+wq! : to save & quitforcefully at a time
 
 
 
