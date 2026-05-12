@@ -200,9 +200,23 @@ chown user:group folder -R : It is change the folder and insider the file user a
 chown user:group folder/* : It is only chanage the files inside the folder data
 chown user:group folder/filename : to change a specific file ex: chown devops:aws flm/jenkins
 
-grep command:
+****GREP COMMAND****
 
+grep "word" filename :  we are getting the data for the how many mwntioned words are there in the file that lines are only display
+grep -i "word" filename : It is a case sencitive 
+grep -v "word" filename : Here getting the data except the mentioned word.
+grep -c "word" filename : we are getting the count of the word in particular file 
+diff filename1 filename2 : we are finding the data is different
 
+****SED COMMAND****
+
+sed 's/existing-word/replace-word/' filename : here the words are changes temprarly it is not impact to the original data.
+sed -i 's/existing-word/replace-word/' filename : here data was changes the original data in the starting one
+sed -i 's/existing-word/replaced-word/g' filename : here replaced the data in the filename
+sed -i 'number+d' filename : deleted the particular that number line ( d- delete) ex: sed -i '5d' filename
+sed -i 'number+i\text' filename : we added the line in the particular mentioned line
+sed -i  '$d' filename : here deleted the last line in the file
+sed -i '$a\text' filename : here data was  added in the last line which we are mentioned in the commant 
 
 
 
