@@ -96,6 +96,9 @@ cat : used to read the data from a file ex: cat jenkin op/ enter the data and pr
 cat > filename : used to overwritte the data(Replace)
 cat >> filename : usd to append the data(old+new data)
 cat -n file name : used to numbering the data
+head filename : used to get staring 10 lines of data in the particular file
+tail filename : used to get last 10 lines of the data in the particular file
+head -n number filename : get the data that particular number of data for the sarting 
 
 ****VIM EDITOR****
 
@@ -197,7 +200,7 @@ chown user:group folder -R : It is change the folder and insider the file user a
 chown user:group folder/* : It is only chanage the files inside the folder data
 chown user:group folder/filename : to change a specific file ex: chown devops:aws flm/jenkins
 
-
+grep command:
 
 
 
