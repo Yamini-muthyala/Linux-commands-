@@ -218,6 +218,7 @@ sed -i 'number+i\text' filename : we added the line in the particular mentioned 
 sed -i  '$d' filename : here deleted the last line in the file
 sed -i '$a\text' filename : here data was  added in the last line which we are mentioned in the commant 
 
+ping site-name : open particular web site ex: ping www.google.com
 
 
 
