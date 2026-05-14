@@ -69,11 +69,13 @@ rmdir foldername{n..n+1} : used to remove a n+1 folders at a time
 rmdir * : used to remove all empty folder
 rmdir -rf * : used to remove all files & folder and also it is used to remove Non-empty foldes
 
+-p =Parents ; -v =verbose ; -h =help; -v =version
+
 ****LIST OF FILES****
 
 ll : list of files (long list),it's comes from the alphbatical order ex: -rw-r--r--, 1 root root 0 JUL 17 13:53 devops (-rw-r--r-- =permitions, 1 root root = owners, 0 jul 13:53 = time, devops = file name)
 ls : shoet list ex: devops ( filename)
-LS->It will give only file/fo;der names  ;  LL->will give the full infoo about files/folder
+LS->It will give only file/folder names  ;  LL->will give the full infoo about files/folder
 ll -t : Will gives the files based on time
 ll -r : will gives the files on reverse order
 ll -a : used to show hidden files
