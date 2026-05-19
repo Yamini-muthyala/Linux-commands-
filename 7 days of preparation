@@ -4,4 +4,19 @@ Assisted in server patching, log monitoring, and troubleshooting issues.
 Automated routine server health checks with Shell scripts.
 
 Day-1:----   [ Linux Basics + Commands ]
+Linux basics
 
+1. What is Linux?
+Linux is an open-source operating system based on Unix.
+
+2. What is Kernel?
+Kernel is the core part of the OS that manages hardware and system resources.
+
+3. What is Shell?
+Shell is a command-line interpreter that allows users to interact with Linux.
+
+4. what is operating System?
+Operating System (OS):--An OS is a software that acts as an interface between computer hardware components & the user.Every computer system
+                        must have at least one OS to run other programs.Applications like browsers,MS.Office,Notepad Games,etc...
+                        need some environment to run & perform its tasks
+    ex:  Window ,Linux , Mac
