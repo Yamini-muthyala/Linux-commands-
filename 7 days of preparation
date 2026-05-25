@@ -85,5 +85,262 @@ cd /             = Root directory
 cd ../..         = Two levels up
 cd /path/to/dir  = Absolute path
 cd ~user         = Another user's home
+----------------------------------------------------------------------------------------------------------------
+Day-2:----[Networking]
+----------------------------------------------------------------------------------------------------------------
+1. IP Addressing
+What is an IP Address?
+An IP address is a unique address assigned to every system in a network.
+Example:`192.168.1.10`
+Two types:Public IP  → Used on the internet
+          Private IP → Used inside local networks
+Check IP Address in Linux :ip addr  (or) ifconfig
+Interview Point :Explain that IP addresses help systems communicate over networks.
 
+2. Subnetting Basics
+Subnetting divides a network into smaller networks.
+Example: IP: `192.168.1.10/24`
+Here:`/24` means subnet mask `255.255.255.0`
+This allows: 254 usable hosts
+Why Used?
+* Better security
+* Better network management
+* Reduced traffic
+
+3. TCP/IP Model[Transmission Control Protocol/Internet Protocol]
+TCP/IP is the communication protocol used in networking.
+Main Layers:
+1. Application Layer
+2. Transport Layer
+3. Internet Layer
+4. Network Access Layer
+
+Important Protocols
+* HTTP/HTTPS → Websites
+* SSH → Secure remote login
+* FTP → File transfer
+* DNS → Name resolution
+
+4. DNS (Domain Name System)
+DNS converts domain names into IP addresses.
+Example:`google.com` → `142.x.x.x`
+DNS Commands : nslookup google.com (or) dig google.com
+Interview Answer :“DNS is used to resolve domain names into IP addresses.”
+
+5. SSH Configuration
+SSH allows secure remote access to Linux servers.
+Install SSH       : sudo yum install openssh-server (or) sudo apt install openssh-server
+Start SSH         : sudo systemctl start sshd
+Enable SSH        : sudo systemctl enable sshd
+Connect to Server : ssh username@ipaddress
+
+6. FTP Configuration
+FTP transfers files between systems.
+Install FTP Server : sudo yum install vsftpd
+Start FTP          : sudo systemctl start vsftpd
+Enable FTP         : sudo systemctl enable vsftpd
+Check FTP Port     : netstat -tulnp
+Default FTP Port   :`21`
+
+7. Apache Web Server Setup
+Install Apache  : For RHEL/CentOS: sudo yum install httpd
+                  For Ubuntu     : sudo apt install apache2
+Start Service   : sudo systemctl start httpd
+Enable Service  : sudo systemctl enable httpd
+Check Status    : systemctl status httpd
+Access Website  : http://server-ip
+
+8. Nginx Setup
+Install Nginx : sudo yum install nginx
+Start Nginx   : sudo systemctl start nginx
+Enable Nginx  : sudo systemctl enable nginx
+
+9. Firewall Configuration
+Linux firewalls protect servers.
+Common tools:
+* iptables
+* firewalld
+Check Firewall : sudo firewall-cmd --state
+Open HTTP Port : sudo firewall-cmd --permanent --add-service=http
+Reload Firewall: sudo firewall-cmd --reload
+
+10. Port Checking
+Check Open Ports : netstat -tulnp (or) ss -tulnp
+Important Ports:
+* 22 → SSH
+* 80 → HTTP
+* 443 → HTTPS
+* 21 → FTP
+
+---
+
+# 11. Network Troubleshooting
+
+## Ping Command
+
+Checks connectivity.
+
+```bash
+ping google.com
+```
+
+## Traceroute
+
+Checks packet path.
+
+```bash
+traceroute google.com
+```
+
+## Curl
+
+Tests websites/services.
+
+```bash
+curl http://localhost
+```
+
+---
+
+# 12. VMware Networking
+
+VMware allows virtual machines to communicate.
+
+Network Types:
+
+* NAT
+* Bridged
+* Host-only
+
+## Practical Use
+
+* Create Linux VM
+* Configure IP
+* Test SSH connection
+
+---
+
+# 13. Monitoring Network Performance
+
+## Commands
+
+### Check Network Usage
+
+```bash
+iftop
+```
+
+### Check Connections
+
+```bash
+netstat
+```
+
+### Check Routing Table
+
+```bash
+route -n
+```
+
+---
+
+# 14. Shell Script Automation
+
+Example script to monitor disk usage:
+
+```bash
+#!/bin/bash
+
+df -h > disk_report.txt
+```
+
+Run:
+
+```bash
+bash script.sh
+```
+
+---
+
+# 15. Backup and Recovery
+
+## Backup Using tar
+
+```bash
+tar -cvf backup.tar /home
+```
+
+## Restore
+
+```bash
+tar -xvf backup.tar
+```
+
+---
+
+# 16. Common Interview Questions
+
+## Q1: Difference between TCP and UDP?
+
+* TCP → Reliable
+* UDP → Faster but unreliable
+
+## Q2: What is DNS?
+
+DNS converts domain names into IP addresses.
+
+## Q3: What is SSH?
+
+SSH provides secure remote server access.
+
+## Q4: How do you check open ports?
+
+```bash
+netstat -tulnp
+```
+
+## Q5: What is a firewall?
+
+A firewall controls incoming and outgoing traffic.
+
+---
+
+# Daily Practice Tasks
+
+## Day 1
+
+* Install Linux VM
+* Configure IP Address
+
+## Day 2
+
+* Install Apache
+* Access webpage
+
+## Day 3
+
+* Configure SSH
+
+## Day 4
+
+* Practice firewall rules
+
+## Day 5
+
+* Configure FTP
+
+## Day 6
+
+* Create shell scripts
+
+## Day 7
+
+* Practice troubleshooting commands
+
+This knowledge is enough for:
+
+* Linux Administrator interviews
+* Junior System Administrator roles
+* Support Engineer roles
+* Cloud/Linux support positions
 
