@@ -229,7 +229,7 @@ Examples:
 Bash : Bash (short for Bourne Again SHell) is a command-line interpreter and scripting language used to interact with a computer's operating system
 Ksh  : The ksh command invokes the Korn shell, which is an interactive command interpreter and a command programming language. 
 Zsh  : Zsh (Z shell) is an advanced command-line interpreter for Unix-like operating systems that serves as both an interactive login shell and a powerful scripting language.
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             File System Questions
 
 7. What is the root directory?
@@ -247,4 +247,75 @@ Directory	Purpose
 /tmp	Temporary files
 /bin	Essential commands
 /opt	Optional software
+
+10. Command to check disk usage?
+df -h
+
+11. Command to check directory size?
+du -sh directory_name
+-------------------------------------------------------------------------------------------------------------
+                                   User Management
+How to create a user?
+useradd username
+passwd username
+
+Difference between useradd and adduser?
+useradd → low-level command
+adduser → interactive friendly command
+
+How to delete a user?
+userdel username
+Delete with home directory: userdel -r username
+
+How to change file permissions?
+chmod 755 file
+
+What is chmod 777?
+It gives:
+Read
+Write
+Execute permissions to everyone
+Usually not recommended due to security risk.
+
+What is chown?
+Used to change ownership.
+chown user:group file
+-----------------------------------------------------------------------------------------------------------------------
+                                        Process Management
+How to check running processes?
+ps -ef  or  top
+
+How to kill a process?
+kill PID
+Force kill: kill -9 PID
+
+Difference between kill and kill -9?
+kill sends graceful termination signal.
+kill -9 forcefully stops process.
+
+What is daemon process?
+A background service process.
+Examples:
+sshd
+httpd
+----------------------------------------------------------------------------------------------------------
+                                        Service Management
+How to start a service?
+systemctl start httpd
+
+How to check service status?
+systemctl status sshd
+
+How to enable service at boot?
+
+
+
+
+
+
+
+
+
+
+
 
