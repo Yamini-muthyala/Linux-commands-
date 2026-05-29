@@ -230,8 +230,7 @@ Bash : Bash (short for Bourne Again SHell) is a command-line interpreter and scr
 Ksh  : The ksh command invokes the Korn shell, which is an interactive command interpreter and a command programming language. 
 Zsh  : Zsh (Z shell) is an advanced command-line interpreter for Unix-like operating systems that serves as both an interactive login shell and a powerful scripting language.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-            File System Questions
-
+                                        File System Questions
 7. What is the root directory?
 Root directory is "/" and it is the top-level directory in Linux.
 
@@ -307,14 +306,91 @@ How to check service status?
 systemctl status sshd
 
 How to enable service at boot?
+systemctl enable httpd
 
+Difference between service and systemctl?
+service used in older SysV init systems
+systemctl used in systemd systems
+----------------------------------------------------------------------------------------------------------------
+                                        Networking Questions
+How to check IP address?
+ip a (or) ifconfig
 
+How to check connectivity?
+ping google.com
 
+Difference between TCP and UDP?
+TCP                              	UDP
+Reliable	                        Faster
+Connection-oriented	              Connectionless
 
+What is SSH?
+SSH is a secure protocol used for remote server login.
 
+Default SSH port?
+22
 
+Command to check listening ports?
+netstat -tulnp (or) ss -tulnp
+-------------------------------------------------------------------------------------------------------
+                                           Storage & Disk
+What is LVM?
+LVM (Logical Volume Manager) helps manage disk storage flexibly.
+Benefits:
+Resize disks
+Snapshots
+Better storage management
 
+How to mount a filesystem?
+mount /dev/sdb1 /mnt
 
+What is fstab?
+/etc/fstab stores permanent mount information.
+
+How to check memory usage?
+free -m
+ 
+Difference between hard link and soft link?
+Hard Link                        	Soft Link
+Same inode	                      Different inode
+Cannot cross filesystem	          Can cross filesystem
+----------------------------------------------------------------------------------------------------------------------------
+                                      Log & Monitoring
+Where are Linux logs stored?
+Mostly inside: /var/log
+
+How to monitor logs in real time?
+tail -f /var/log/messages
+
+What is grep?
+Used to search text patterns.
+Example: grep error logfile
+
+Difference between grep and find?
+grep -searches content
+find -searches files/directories
+
+How to check CPU utilization?
+top (or) htop
+-------------------------------------------------------------------------------------------------------------------------------
+                                        Shell Scripting
+What is shell scripting?
+Automating tasks using shell commands in a script file.
+
+How to execute a shell script?
+chmod +x script.sh
+./script.sh
+
+What is shebang line?
+#!/bin/bash
+Defines script interpreter.
+
+How to schedule tasks in Linux?
+Using cron jobs.
+
+How to edit cron jobs?
+crontab -e
+----------------------------------------------------------------------------------------------------------------------------------
 
 
 
