@@ -550,3 +550,67 @@ Benefits:
       ->Supports memory-intensive applications.
 Interview line:
 Swap acts as an extension of RAM and is used when physical memory is exhausted.
+
+Difference Between Hard Link and Soft Link?
+Hard Link	                                      Soft Link
+Points to inode	                                Points to file path
+Same filesystem only	                          Can span filesystems
+Works if original file deleted	                Breaks if original deleted
+Create:
+Hard link:  ln file1 hardlink
+Soft link:  ln -s file1 symlink
+
+9. What is SSH?
+Answer:
+SSH (Secure Shell) is a secure protocol used for remote access to Linux servers.
+Features:
+-> Encrypted communication
+-> Remote command execution
+->File transfer
+Example: ssh user@server-ip
+Interview line:
+SSH provides secure remote administration and encrypted communication between systems.
+
+What is Cron?
+Answer: Cron is a Linux scheduler used to run tasks automatically.
+Example: crontab -e
+Run every day at 2 AM: 0 2 * * * /backup.sh
+Interview line:
+Cron automates repetitive administrative tasks such as backups and monitoring scripts.
+
+What is DNS?
+Answer: DNS (Domain Name System) translates domain names into IP addresses.
+Example: google.com → 142.x.x.x
+Commands:
+nslookup google.com
+dig google.com
+Interview line:
+DNS resolves human-readable domain names into machine-readable IP addresses.
+
+Difference Between TCP and UDP?
+TCP                            	UDP
+Connection-oriented	            Connectionless
+Reliable	                      Faster
+Error checking	                Minimal checking
+SSH, HTTP, FTP                	DNS, VoIP, Streaming
+Interview line:
+TCP guarantees delivery and reliability, while UDP prioritizes speed and low latency.
+
+What is Apache?
+Answer: Apache is an open-source web server used to host websites.
+Features:
+-> Virtual hosts
+-> SSL support
+-> High compatibility
+Service: systemctl status apache2
+Interview line:
+Apache is a web server that delivers web content over HTTP and HTTPS.
+
+What is Nginx?
+Answer: Nginx is a lightweight, high-performance web server and reverse proxy.
+Uses:
+-> Load balancing
+-> Reverse proxy
+-> Static content serving
+Interview line:
+Nginx is known for handling large numbers of concurrent connections efficiently.
