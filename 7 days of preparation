@@ -614,3 +614,13 @@ Uses:
 -> Static content serving
 Interview line:
 Nginx is known for handling large numbers of concurrent connections efficiently.
+
+What is SELinux?
+Answer:SELinux (Security-Enhanced Linux) provides mandatory access control.
+Modes:
+getenforce
+Enforcing
+Permissive
+Disabled
+Interview line:
+SELinux enhances Linux security by enforcing access control policies beyond standard file permissions.
